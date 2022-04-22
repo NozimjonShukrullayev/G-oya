@@ -5,3 +5,179 @@
   padding: 0;
   box-sizing: border-box;
 }
+.bg-0 {
+  background-color: transparent;
+}
+.text-dark-warning {
+  color: rgb(185, 145, 0);
+}
+.text-letter {
+  letter-spacing: 1.5px;
+}
+.align-content-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.margin-left {
+  margin-left: 2.1rem;
+}
+/* HERO */
+#hero {
+  min-height: 100vh;
+  margin: 0 30px;
+}
+#hero .jumbotron {
+  background: url("../images/hero-jumbotron-img.jpg") no-repeat #f2f2f2;
+  background-size: 100%;
+  background-position: top -30px left 0px;
+  height: 600px;
+  position: relative;
+}
+.hero-dots {
+  position: absolute;
+  bottom: 0;
+  font-size: 45px;
+  color: rgb(185, 145, 0);
+}
+#hero > nav.navbar {
+  background-color: white;
+  z-index: 100;
+}
+#hero > .mobile-logo {
+  display: none;
+}
+.bi-list {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.bi-search {
+  font-size: 1rem;
+}
+.bi-cart {
+  font-size: 1.5rem;
+}
+/* HERO */
+/* PRODUCTS */
+#products .jumbotron.card__one {
+  background: url('../images/card__one-img.jpg') no-repeat,#e7d8d4;
+  background-blend-mode: darken;
+  background-size: 70%;
+  background-position: 180px center;
+}
+#products .jumbotron {
+  padding: 60px 60px 80px 60px;
+}
+#products .jumbotron.card__two {
+  background: url('../images/card__two-img.jpg') no-repeat, #d1ebf2;
+  background-blend-mode: darken;
+  background-size: 65%;
+  background-position: right -50px center;
+}
+.card-four-img, .card-five-img {
+  width: 100%;
+}
+/* PRODUCTS */
+/* SPACES */
+.spaces-card {
+  background: #edead3;
+}
+.spaces-body .bi {
+  font-size: 40px;
+}
+/* SPACES */
+/* FEATURED */
+.featured-content > div {
+  background: #f2f2f2;
+}
+/* FEATURED */
+/* NEWS */
+#news {
+  position: relative;
+  margin-bottom: 110px;
+}
+#news img {
+  height: 233px;
+  object-fit: cover;
+}
+#news .news-dots {
+  bottom: -50px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+/* NEWS */
+/* FOOTER */
+.footer-list {
+  list-style: none;
+}
+/* FOOTER */
+@media only screen and (max-width:991px) and (min-width: 768px) {
+  .disp-none-md {
+    display: none;
+  }
+}  
+@media only screen and (max-width:767px) {
+  .disp-none-sm {
+    display: none;
+  }
+  #hero .container > ul.navbar-nav.align-items-center.col.justify-content-center,
+  .container > button:nth-child(2).border-0.bg-0.p-2, 
+  .container > a.p-2.text-dark.nav-link.text-capitalize {
+    display: none;
+  }
+  #hero .jumbotron {
+    background-size: 160%;
+    background-position: top -10px left -30vw;
+    height: 420px;
+  }
+  .hero-dots {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #hero > .mobile-logo {
+    position: absolute !important;
+    top: 20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+    z-index: 110;
+  }
+}
+@media only screen and (max-width:575px) {
+  .col-xs-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-xs-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  #hero > .mobile-logo {
+    top: 12px;
+  }
+  #hero .jumbotron {
+    background-size: 200%;
+    background-position: top -10px left -55vw;        
+  }
+  #hero {
+    margin: 0 15px;
+  }
+  #hero .jumbotron {
+    background-position: top 0px left -40vw;
+  }
+  #products .jumbotron {
+    padding: 37px 13px 49px 15px;
+  }
+  #products .jumbotron.card__one {
+    background-position: top -35px left 150px;
+  }
+  .spaces-card {
+    padding: 60px 30px;
+  }
+}
